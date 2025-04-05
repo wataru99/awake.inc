@@ -94,6 +94,43 @@
             text-decoration: none;
             font-weight: bold;
         }
+        /* スマホ画面（幅768px以下）のときの調整 */
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .section {
+        padding: 20px 15px;
+        width: 95%;
+    }
+
+    .service-box,
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
     </style>
 </head>
 <body>
